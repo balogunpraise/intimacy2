@@ -1,0 +1,17 @@
+div{
+    h1{
+        margin-top: 20px;
+    }
+    .marquee-section{
+        display: flex;
+        height: 4rem;
+        justify-content: space-around;
+        padding: 10px 5px;
+        background: whitesmoke;
+        width: 100vw;
+        align-items: center;
+        div{
+            width: 200px;
+        }
+    }
+}

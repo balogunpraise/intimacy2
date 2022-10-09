@@ -1,0 +1,15 @@
+.custom-button{
+    width: 300px;
+    height: 50px;
+    left: 50;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background: linear-gradient(to right, #34A853, #B4D245);
+    transition: all ease .5s;
+    &:hover{
+        width: 350px;
+    }
+}

@@ -1,0 +1,116 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+    display: flex;
+    background: rgba(0 , 0, 0, .5);
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    .link{
+        text-decoration: none;
+    }
+    .navigations{
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        gap: 1rem;
+        p{
+            color: white;
+        }
+    }
+    .hamburger{
+        display: none;
+    }
+    .navigations>:last-child{
+        padding: 10px 40px;
+        background-color: white;
+        color: #34A853;
+        //border: #34A853 1px solid;
+        transition: all ease .5s;
+        &:hover{
+            background-color: #34A853;
+            .link{
+                color: white;
+            }
+        }
+        .link{
+            color: #34A853;
+        }
+    }
+    img{
+        width: 150px;
+        height: 50px;
+    }
+    .navigations{
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+.scrolled{
+    background-color: rgba(0 , 0, 0, .8);
+}
+
+@media only screen
+and (max-width: 600px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 99;
+        display: flex;
+        background: rgba(0 , 0, 0, .5);
+        height: 10vh;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        .link{
+            text-decoration: none;
+        }
+        .navigations{
+            display: none;
+            align-items: center;
+            margin-right: 50px;
+            gap: 1rem;
+            p{
+                color: white;
+            }
+        }
+        .hamburger{
+            display: block;
+        }
+        .navigations>:last-child{
+            padding: 10px 40px;
+            background-color: white;
+            color: #34A853;
+            //border: #34A853 1px solid;
+            transition: all ease .5s;
+            &:hover{
+                background-color: #34A853;
+                .link{
+                    color: white;
+                }
+            }
+            .link{
+                color: #34A853;
+            }
+        }
+        img{
+            width: 150px;
+            height: 50px;
+        }
+        .navigations{
+            .link{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .scrolled{
+        background-color: rgba(0 , 0, 0, .8);
+    }
+}

@@ -1,0 +1,37 @@
+.section{
+    background-color: white;
+    padding: 20px 50px;
+    overflow-x: hidden;
+    .headin{
+        text-align: center;
+    }
+    .flex-box{
+        display: flex;
+        justify-content: space-around;
+        .message{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            div{
+          
+                padding: 10px;
+                border-radius: 10px;
+                width: 20rem;
+                height: 15rem;
+                border-radius: 10px;
+                background-color: whitesmoke;
+                box-shadow: 10px 9px 5px -3px rgba(0,0,0,0.58);
+                -webkit-box-shadow: 10px 9px 5px -3px rgba(0,0,0,0.58);
+                -moz-box-shadow: 10px 9px 5px -3px rgba(0,0,0,0.58);
+                p{
+                    text-justify: auto;
+                }
+            }
+        }
+
+        img{
+            height: 40rem;
+            
+        }
+    }
+}

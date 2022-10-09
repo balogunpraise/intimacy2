@@ -1,0 +1,181 @@
+.form{
+    position: absolute;
+    border: solid gray 1px;
+    border-radius: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //height: 70%;
+    padding: 10px 30px;
+    
+    .form-control{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+      
+        input{
+            width: 230px;
+            border-radius: 5px;
+            height: 40px;
+            border: 1px rgb(201, 198, 198) solid;
+            outline: none;
+            padding-left: 10px;
+        }
+    }
+    .select-controls{
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+        .selects{
+            display: flex;
+            flex-direction: column;
+            select{
+                width: 250px;
+                height: 40px;
+                padding-left: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(201, 198, 198);
+            }
+        }
+    }
+    .amount, .submit{
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 1px solid rgb(201, 198, 198);
+    }
+    .amount{
+        padding-left: 10px;
+        width: 97.5%;
+        outline: none;
+    }
+    .submit{
+        background-color: #34A853;
+        color: whitesmoke;
+        transition: ease all .5s;
+        border: 1px solid #34A853;
+        cursor: pointer;
+        &:hover{
+            background-color: whitesmoke;
+            color: #34A853;
+        }
+    }
+}
+.heading{
+    //margin-top: 35px;
+    background-color: whitesmoke;
+    width: 600px;
+    border: 1px solid #34A853;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    button{
+        width: 300px;
+        height: 40px;
+        color: #34A853;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all ease .5s;
+    }
+  
+    .active{
+        background-color: #34A853;
+        color: whitesmoke;
+    }
+}
+@media only screen
+and (max-width: 600px) 
+// and (max-width: 720px) 
+{
+    .form{
+        position: absolute;
+        border: solid gray 1px;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //height: 70%;
+        //padding: 10px 30px;
+        
+        .form-control{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            gap: 10px;
+            //justify-content: space-between;
+          
+            input{
+                width: 250px;
+                border-radius: 5px;
+                height: 40px;
+                border: 1px rgb(201, 198, 198) solid;
+                outline: none;
+                padding-left: 10px;
+            }
+        }
+        .select-controls{
+            width: 100%;
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+            .selects{
+                display: flex;
+                flex-direction: column;
+                select{
+                    width: 100%;
+                    height: 40px;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                    border: 1px solid rgb(201, 198, 198);
+                }
+            }
+        }
+        .amount, .submit{
+            width: 250px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(201, 198, 198);
+        }
+        .amount{
+            padding-left: 10px;
+            //width: 97.5%;
+            outline: none;
+        }
+        .submit{
+            width: 100%;
+        }
+    }
+    .heading{
+        margin-top: 35px;
+        background-color: whitesmoke;
+        width: 200px;
+        display: flex;
+        border: 1px solid #34A853;
+        border-radius: 20px;
+        margin-top: 100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        button{
+            width: 100px;
+            height: 40px;
+            color: #34A853;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all ease .5s;
+        }
+      
+        .active{
+            background-color: #34A853;
+        }
+    }
+}
