@@ -19,20 +19,21 @@ function App() {
     setOpened(false)
   }
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
       <aside className={opened ? 'side-navigation open': 'side-navigation'}>
           <div className='top-section' style={{
             display: 'flex',
             justifyContent: 'space-between',
             alignItems : 'center',
-            padding: '10px 10px'
+            padding: '10px 10px',
+            marginTop: '11px'
           }}>
             <Link className='link' to="/" onClick={closeSidebar}>
-              <img style={{width: '150px',height: '50px'}} className='logo' src={intimate} alt="" />
+              <img style={{width: '100px',height: '30px', marginLeft: '10px', marginTop: '20px'}} className='logo' src={intimate} alt="" />
             </Link>
             <button onClick={closeSidebar} style={{color: 'whitesmoke', background: 'none',
-              border: 'none', fontSize: '1.5rem'}}>X</button>
+              border: 'none', fontSize: '1.5rem', marginTop: '20px'}}>X</button>
           </div>
           <div className='flex-cover'>
             {

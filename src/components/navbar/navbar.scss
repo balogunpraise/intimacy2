@@ -42,7 +42,8 @@
     }
     img{
         width: 150px;
-        height: 50px;
+        height: 40px;
+        margin-left: 10px;
     }
     .navigations{
         .link{
@@ -100,8 +101,9 @@ and (max-width: 600px) {
             }
         }
         img{
-            width: 150px;
-            height: 50px;
+            width: 100px;
+            height: 30px;
+       
         }
         .navigations{
             .link{
